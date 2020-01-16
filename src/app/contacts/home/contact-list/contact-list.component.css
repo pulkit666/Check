@@ -1,0 +1,26 @@
+table {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .edit{
+    height: 48px;
+    width: 120px;
+    background-color: indianred;
+    color: white;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  .delete{
+    height: 48px;
+    width: 120px;
+    background-color: red;
+    color: white;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  th.mat-header-cell {
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+.formCard {
+  margin-top: 5%;
+}
+
+input {
+  height: 40px;
+  width: 200px;
+  margin-right: 24px;
+  padding: 8px;
+  position: relative;
+}
+
+.error {
+  position: absolute;
+  top: 13%;
+  left: 46%;
+  color: red;
+}
+
+.submit{
+    height: 48px;
+    width: 120px;
+    background-color: #96cc39;
+    color: white;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}

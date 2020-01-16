@@ -1,0 +1,15 @@
+<div class="formCard">
+  <form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+    <input placeholder="First Name" name="firstName" #fname="ngModel" [(ngModel)]="contact.firstName" type="text" required />
+    <input placeholder="Last Name" name="lastName" #lname="ngModel" [(ngModel)]="contact.lastName" type="text" required/>
+    <span>
+      <input placeholder="Number" name="number" #number="ngModel" [(ngModel)]="contact.number"
+        [pattern]="mobNumberPattern" type="text" (blur)="onBlur($event)" minlength=10 maxlength=10 required/>
+      <span class="error" *ngIf="error">
+        Mobile number not valid.
+      </span>
+    </span>
+    <input placeholder="Group" name="group" #number="ngModel" [(ngModel)]="contact.group" type="text" required/>
+    <button class="submit" type="submit">Submit</button>
+  </form>
+</div>
